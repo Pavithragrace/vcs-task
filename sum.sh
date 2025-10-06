@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# add two numbers
-expr ${1:-0} + ${2:-0}
+expr ${1:-0} + ${2:-0} | xargs -I{} echo "Sum is {}"
